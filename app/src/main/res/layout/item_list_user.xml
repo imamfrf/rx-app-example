@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/image_view_avatar"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_view_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Imam Farouqi Faial"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/text_view_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="imamfrf@gmail.com"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:src="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

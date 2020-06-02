@@ -1,0 +1,4 @@
+rootProject.name='RxAppExample'
+include ':app'
+include ':domain'
+include ':data'
